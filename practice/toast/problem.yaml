@@ -1,0 +1,10 @@
+author: Daniel Lokshtanov
+source: Baltic Olympiad in Informatics 2017
+source_url: http://boi2017.org
+license: cc by-sa
+type: scoring
+
+grading:
+  objective: max
+
+validator_flags: float_tolerance 1.1e-4
