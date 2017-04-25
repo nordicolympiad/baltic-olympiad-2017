@@ -7,18 +7,17 @@ Polly the Parrot is sitting at the top of her favorite tree in Manhattan. In Man
 Polly has $n$ friends that live in different parts of the city. Friend $i$ is known to never leave the neighborhood between avenue $x_1^i$ and $x_2^i$, and between the streets $y_1^i$ and $y_2^i$. Every now and then, Polly hears a call for help from one of her friends. Based on how loud the call is, Polly is able to precisely determine that the manhattan distance from her tree to the friend who is calling (in Manhattan the buildings are so tall that even sound travels along the streets and avenues). Polly doesn't care enough to actually go help, but she is interested in how many different friends the call could be coming from. This is what she is asking you to help her with. That, and a cracker. 
 
 \section*{Input}
-
 The first input line contains two positive integers $n$ and $q$: the number of friends Polly has, and the number of calls for help she heard. The second line contains two values $x_a$ and $y_a$: the position of the tree where she is sitting.
 
 Then follow $n$ lines that describe the neighborhoods her friends frequent. The $i$'th line describes the neighborhood of friend $i$ by specifying $x_1^i, y_1^i, x_2^i$ and $y_2^i$. Finally there are $q$ lines that describe the calls for help. Each line $j$ contains a single non-negative integer $x_j \geq 0$, how far from Polly in Manhattan distance the call originated from. 
 
-\paragraph*{Constraints}
+\section*{Constraints}
 We always have $1 \leq n, q \leq 10^5$. Further, all coordinates are integers and between $0$ and $10^6$, and all distances are integers between $0$ and $2\cdot 10^6$.  For subcases, the inputs have these further restrictions:
 
 \begin{description}
-    \item{\textbf{30 points}} $n \leq 10$
-    \item{\textbf{30 points}} $q \leq 10$ 
-    \item{\textbf{40 points}} No further restrictions.
+    \item{\textbf{Group 1: 30 points}} $n \leq 10$
+    \item{\textbf{Group 2: 30 points}} $q \leq 10$
+    \item{\textbf{Group 3: 40 points}} No further restrictions.
 \end{description}
 
 
