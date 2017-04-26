@@ -175,10 +175,18 @@ def cliqueleaves(n, d):
     ksize = d-1
     graph = indep_set(1)
     n -= 1
-    while n > 0:
-        ks = min(n, ksize)
-        cliq = clique(ks)
+    while n > 1:
+        ks = 2*min(n, ksize)
+        cliq = clique(ks//2)
+        start = len(graph)
+        end = start + ks//2
         graph = disjointUnion(graph, cliq)
+        for i in range(start, end):
+            graph[0].append(len(graph))
+            graph[i].append(len(graph))
+            graph.append([0, i])
+        n -= ks
+    return graph
         
     
 def periferalAttachment(graph, newnodes, maxdeg, mindeg):

@@ -70,6 +70,7 @@ group g2 12
 # N <= 5000, k <= 3 - same + cycles, 2trees, tw2, mockforest, subdivided graphs
 repeat 1 testcase star -n 5000 -d 1 -seed
 repeat 1 testcase star -n 5000 -d 2 -seed
+repeat 1 testcase star -n 5000 -d 2 -seed
 repeat 2 testcase periferal -n 5 -d 2 -mindeg 0 -seed
 repeat 1 testcase doublestar -n 5000 -d 2 -seed
 repeat 1 testcase indepset -n 5000 -d 2 -seed
@@ -89,6 +90,8 @@ group g3 23
 # N = 50000
 repeat 1 testcase indepset -n 5000 -d 3 -seed
 repeat 2 testcase maxdeg -n 20 -d 5 -seed
+repeat 1 testcase cliqueleaves -n 13 -d 4 -seed
+repeat 1 testcase cliqueleaves -n 5000 -d 9 -seed
 repeat 2 testcase maxdegbigK -n 20 -d 5 -seed
 repeat 2 testcase maxdegsmallerK -n 20 -d 5 -seed
 repeat 1 testcase maxdeg -n 50000 -d 9 -seed
@@ -98,6 +101,8 @@ repeat 1 testcase maxdegsmallerK -n 50000 -d 9 -seed
 group g4 38
 # Allow n2
 # N <= 5000 - + bounded tw, clique-trees, d-degen bipartite graphs
+repeat 1 testcase cliqueleaves -n 13 -d 4 -seed
+repeat 1 testcase cliqueleaves -n 5000 -d 9 -seed
 repeat 1 testcase periferal -n 5000 -d 3 -seed
 repeat 1 testcase periferal -n 5000 -d 5 -mindeg 3 -seed
 repeat 1 testcase periferal -n 5000 -d 7 -seed
@@ -125,6 +130,8 @@ repeat 1 testcase maxdegsmallerK -n 5000 -d 9 -seed
 group g5 23
 # Max 2^d *d^2 * n
 # N = 50000, k <= 5
+repeat 1 testcase cliqueleaves -n 13 -d 4 -seed
+repeat 1 testcase cliqueleaves -n 50000 -d 4 -seed
 repeat 1 testcase periferal -n 50000 -d 3 -mindeg 3 -seed
 repeat 1 testcase periferal -n 50000 -d 4 -mindeg 2 -seed
 repeat 1 testcase star -n 50000 -d 1 -seed
