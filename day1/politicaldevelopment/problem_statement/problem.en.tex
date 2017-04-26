@@ -1,0 +1,55 @@
+\problemname{Political Development}
+\illustration{.40}{committee}{\href{https://commons.wikimedia.org/wiki/File:Federal_Open_Market_Committee_Meeting.jpg}{CC0 Public Domain. Federal Open Market Committee, Federal Reserve Bank of Philadelphia via Wikimedia Commons}}
+
+\noindent
+A certain political party with $N$ members wants to develop some brand new politics. In order to do so, the party plans to make a committee for new political development. Clearly, the best politics is developed when all committee members disagree with each other, and when the committee is as large as possible.
+
+In order to figure out which pairs of politicians disagree and which don't, the party then arranged for every possible pair of politicians to discuss a randomly selected topic. Whenever two politicians couldn't agree on their assigned topic, this was recorded in the party's \emph{Book of Great Achievements}.
+
+Armed with this book, you have now been assigned the task of finding the largest comittee where everyone disagrees. However, finding a large comittee can prove challenging; careful analysis have revealed that for \emph{any} non-empty group of party members, there is always at least one member of the group who disagrees with (strictly) less than $K$ of the other group members.
+%
+Obviously, then, the committee can not have more than $K$ members. But is there a choice of committee of this size? Find the size of a largest possible committe such that nobody in that committee agrees.
+
+% A certain political party with $N$ members wants to develop some brand new politics. Prior to the party congress, each pair of politicians met in private, and discussed the matters at hand. At the end of their meeting, thy either {\em agreed} or {\em disagreed}. It does not really matter which topic they discussed, only whether they reached an agreement or not, and it is possible for two agreeing politicians to disagree with completely different sets of other politicians.
+% %They don't really remember what it is they agreed or disagreed on, only that they did.
+% %Note that disagreement is a personal matter between two consensual politicians who agree to disagree - if they disagree on one topic, then they disagree on all.
+% %
+% The party plans to form a committe for new political development. Clearly, the best politics is developed when all committee members disagree with each other, and when the committee is as large as possible.
+%
+% %In order to do so, the party plans to make a committee for new political development. Clearly, the best politics is developed when all committee members disagree with each other, and when the committee is as large as possible.
+%
+% %It is possible for two agreeing politicians to disagree with completely different sets of other politicians.
+%
+% However, finding a large comittee where everyone disagrees can prove challenging; for any committee
+% %regardless of which committee
+% the party leadership could possibly put together, there is
+% %party members participate in a panel debate, there
+% is always that one committee member who disagrees with (strictly) less than $K$ of the other committee members.
+% %panelists.
+% %
+% Obviously, then, the committee can not have more than $K$ members. But is there a choice of a committee of this size? Find the size of a largest possible committe such that nobody in that committee agrees.
+
+
+
+%; disagreement is a personal matter between two consensual politicians who agree to disagree.
+
+
+
+\section*{Input}
+The first line contains two integers,  $N$ the number of members in the party, and $K$ as described above. Each member is indicated by an integer $i$ between $0$ and $N-1$. After the first line follow $N$ lines, one for each politician $i$, starting with $i = 0$. The line for politician $i$ begins with an integer $D_i$, and is followed by $D_i$ integers indicating with which other party members the $i$-th politician disagrees according to the \emph{Book of Great Achievements}.
+
+\paragraph*{Constraints}
+We always have $0 \leq D_i < N \leq 50\,000$, and $1 \leq K \leq 10$. For subcases, the inputs have these further restrictions:
+
+\begin{description}
+    \item{\textbf{Group 1: 4 points}} $K \leq 2$, $N \leq 5\,000$ % Contains edge?
+    \item{\textbf{Group 2: 12 points}} $K \leq 3$, $N \leq 5\,000$ % Contains triangle?
+    %\item{\textbf{21 points}} All party members disagree with at most $10$ other members.
+    \item{\textbf{Group 3: 23 points}} Each party member disagrees with at most $10$ other members.
+    \item{\textbf{Group 4: 38 points}} $N \leq 5000$
+    \item{\textbf{Group 5: 23 points}} $K \leq 5$
+\end{description}
+
+
+\section*{Output}
+Output a single integer, the size of the largest possible comittee.
