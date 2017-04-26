@@ -1,0 +1,21 @@
+\problemname{Cat in a tree}
+\illustration{.35}{kittentree}{\href{https://www.flickr.com/photos/zoeshuttleworth/23054362483/}{CC BY-2.0, Just a kitten in a tree by Zoe Shuttleworth via Flickr}}
+
+A cat lives in a tree that has $N$ nodes. She will demarcate her territory by ``marking'' some of the tree nodes. Marked nodes may not be closer to each other than distance $D$. Find the maximum number of nodes that the cat can mark.
+ 
+\section*{Input}
+First line has two integers, $N$ and $D$. The $0$'th node is the root node of the tree. Then follows $N-1$ lines, the $i$-th of which contain a single integer $x_i$ with $0 \leq x_i < i$. This means that node $x_i$ is connected to node $i$.
+ 
+
+
+\section*{Constraints}
+We always have $1 \leq N, D \leq 10^5$. For subcases, the inputs have these further restrictions:
+\begin{itemize}
+    \item{\textbf{Group 1: 11 points}} $N \leq 18$
+    \item{\textbf{Group 2: 40 points}} $N \leq 1500$
+    \item{\textbf{Group 3: 49 points}} No further restrictions.
+\end{itemize}
+
+\section*{Output}
+Output should contain one integer: the maximum number of nodes that can be marked.
+
