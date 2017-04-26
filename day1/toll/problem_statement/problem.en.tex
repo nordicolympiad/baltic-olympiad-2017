@@ -1,0 +1,31 @@
+\problemname{Toll}
+\illustration{.40}{tollroadcropped}{\href{https://commons.wikimedia.org/wiki/File:Toll_Plaza_on_Dulles_Toll_Road_1.JPG}{CC-BY-SA-3.0, Wikimedia Commons}}
+
+\noindent
+A trucking company wants to optimize its internal processes---which mainly means saving money. The company serves a region where a toll must be paid for every single street.  Each street connects two places (cities, villages etc.) directly.  The company serves a set of orders; each order tells them to carry goods from one place to another.  When serving an order, the company wants to pay the minimum overall toll.  As the region's street network can be modeled by a graph where each edge has a specific cost (the toll for the respective street), the company actually wants to know (the cost of) the cheapest path between two nodes in this graph.
+
+However, the region's street network graph has an interesting property: it is directed (i.e.~all streets are oneway), and there can only be an edge from $a$ to $b$ if $\lfloor b/K\rfloor = 1 + \lfloor a/K\rfloor$ (for some constant $K$).
+
+Write a program that for each of a given list of orders outputs the minimum toll the company has to pay to serve the respective order.
+
+\section*{Input}
+
+The first line contains four integers: $K$ (with the meaning described above), $N$ (the number of places), $M$ (the number of streets), and $O$ (the number of orders).
+
+Each of the next $M$ lines contains three integers $a,b,t$ ($0 \leq a, b < N$). This means that there is a (oneway) street from $a$ to $b$ with toll $t$. You are guaranteed that $\lfloor b/K\rfloor = 1 + \lfloor a/K\rfloor$ is satisfied, and that no two locations are connected by more than one street.
+
+Finally $O$ lines follow, each containing two integers $a,b$: this means that there is an order to carry goods from place $a$ to place $b$.
+
+\section*{Constraints}
+We always have $1 \leq N \leq 30\,000$, $1 \leq O \leq 3000$ and $K\leq 5$. Moreover, we have $0 \leq a < b < N$ for all orders $a,b$ and $1 \leq t \leq 10\,000$ for all tolls $t$. For subcases, the inputs have these further restrictions:
+
+\begin{description}
+    \item{\textbf{Group 1: 7 points}} $K = 1$                 % $O(N + O)$
+    \item{\textbf{Group 2: 10 points}} All orders have $a=0$.  % $O(K^2 * N) DP$
+    \item{\textbf{Group 3: 31 points}} $O \leq 100$         % $O(K^{3/2} O\sqrt N)$
+    \item{\textbf{Group 4: 52 points}} No further restrictions. % $O(K^3(N+KO\log(N/K)))$
+\end{description}
+
+
+\section*{Output}
+Your output should consist of $O$ lines, each with one integer. The $i$-th line should contain the toll on a cheapest path between the two places in order $i$. If no such path exists, output $-1$ in this line.
