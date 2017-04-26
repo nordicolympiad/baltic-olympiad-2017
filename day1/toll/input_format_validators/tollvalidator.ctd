@@ -1,10 +1,10 @@
-INT(1, 7, k)
+INT(1, 5, k)
 SPACE
-INT(1, 40000, n)
+INT(1, 50000, n)
 SPACE
-INT(1, n*k, m)
+INT(0, n*k, m)
 SPACE
-INT(1, 40000, o)
+INT(1, 10000, o)
 NEWLINE
 
 REP(m)

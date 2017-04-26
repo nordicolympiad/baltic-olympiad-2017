@@ -82,7 +82,6 @@ int main() {
 	for(int i = 0; i < M; ++i) {
 		int a,b,t;
 		scanf("%d%d%d",&a,&b,&t);
-        assert(a == 0);
 		initArray[a/K].M[a%K][b%K] = t;
 	}
 
@@ -93,6 +92,7 @@ int main() {
 	for(int i = 0; i < O; ++i) {
 		int a,b;
 		scanf("%d%d",&a,&b);
+        assert(a == 0);
 		if(a/K >= b/K) {
 			printf("-1\n");
 		} else {
