@@ -17,13 +17,14 @@ Each of the next $M$ lines contains three integers $a,b,t$ ($0 \leq a, b < N$). 
 Finally $O$ lines follow, each containing two integers $a,b$: this means that there is an order to carry goods from place $a$ to place $b$.
 
 \section*{Constraints}
-We always have $1 \leq N \leq 30\,000$, $1 \leq O \leq 3000$ and $K\leq 5$. Moreover, we have $0 \leq a < b < N$ for all orders $a,b$ and $1 \leq t \leq 10\,000$ for all tolls $t$. For subcases, the inputs have these further restrictions:
+We always have $1 \leq N \leq 50\,000$, $1 \leq O \leq 10\,000$ and $K\leq 5$. Moreover, we have $0 \leq a < b < N$ for all orders $a,b$ and $1 \leq t \leq 10\,000$ for all tolls $t$. For subcases, the inputs have these further restrictions:
 
 \begin{description}
     \item{\textbf{Group 1: 7 points}} $K = 1$                 % $O(N + O)$
     \item{\textbf{Group 2: 10 points}} All orders have $a=0$.  % $O(K^2 * N) DP$
-    \item{\textbf{Group 3: 31 points}} $O \leq 100$         % $O(K^{3/2} O\sqrt N)$
-    \item{\textbf{Group 4: 52 points}} No further restrictions. % $O(K^3(N+KO\log(N/K)))$
+    \item{\textbf{Group 3: 8 points}} $O \leq 100$   % Repeated DP
+    \item{\textbf{Group 4: 31 points}} $O \leq 3\,000$         % $O(K^{3/2} O\sqrt N)$
+    \item{\textbf{Group 5: 44 points}} No further restrictions. % $O(K^3(N+KO\log(N/K)))$
 \end{description}
 
 
