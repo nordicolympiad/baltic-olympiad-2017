@@ -11,7 +11,7 @@ From anonymous (but highly reliable) sources, Headmistress Umbridge knows that t
   \item The set of students can be partitioned into groups, such that every student participates in exactly one group, where
   \begin{itemize}
     \item each group has at least one and at most $p$ students, and
-    \item for each group there are at most $q$ pairs of friends with one of them in the group, and the other one outside of it.
+    \item for each group there are at most $q$ pairs of friends with the first one in the group, and the second one outside of it.
   \end{itemize}
 \end{itemize}
 \noindent
@@ -19,11 +19,13 @@ Note that two students in the same group do not have to be friends.
 
 Umbridge has hired you to figure out whether it is possible that all students are telling the truth, or whether she can be sure that at least one student is lying, and that she therefore should put everyone in detention. Is this morally questionable? Probably. 
 
+(In case the students may be telling the truth, you are worried that her suspicion might fall on you instead; thus you will also want to provide evidence of a valid partition if there is one.)
+
 \section*{Input}
 First a single line with three non-negative integers $n$, $p$ and $q$ as described above. Next follow $n$ lines, one for each student, starting with student $i=0$. Each such line starts with an integer $m_i$, denoting the number of friends student number $i$ claims that she has. Then follow $m_i$ distinct integers between $0$ and $n-1$, indicating who those friends are (the students are numbered from $0$ to $n-1$). 
 
 \section*{Constraints}
-We always have $1 \leq n \leq 2000$, and $p + q \leq 15$. Furthermore, it is guaranteed that $m_0 + m_1 + \ldots + m_{n-1} \leq 9000$. A student never lists herself as one of her friends. For subcases, the inputs have these further restrictions:
+We always have $1 \leq n \leq 2\,500$, and $p + q \leq 15$. Furthermore, it is guaranteed that $m_0 + m_1 + \ldots + m_{n-1} \leq 30\,000$. A student never lists herself as one of her friends. For subcases, the inputs have these further restrictions:
 
 \begin{itemize}
     \item{\textbf{Group 1: 20 points}} $n \leq 16$
@@ -33,5 +35,5 @@ We always have $1 \leq n \leq 2000$, and $p + q \leq 15$. Furthermore, it is gua
 \end{itemize}
 
 \section*{Output}
-Output should contain a single word on a single line. Output ``home'' if it is possible that all students are telling the truth, or ``detention'' if you can be certain that at least one student is lying.
+If Dolores can be certain someone did't tell the truth, output ``detention''. Otherwise, output ``home''. If you output home on the first line, then you should prove your claim by outputting a partition of the students into groups such that the requirements above hold (if there are several, any one will do): The second line should then contain a positive integer $G$, the number of groups. The following $G$ lines should each begin with a positive integer $g_i$, the number of students in the $i$-th group. Then on the same line, $g_i$ integers indicating the students in this group.
 
