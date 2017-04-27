@@ -1,0 +1,28 @@
+\problemname{Plus Minus}
+\illustration{.40}{plusminus}{\href{https://commons.wikimedia.org/wiki/File:PlusMinus.svg}{CC0 Public Domain, Marian Sigler via Wikimedia Commons}}
+
+Matthew the physicist studies the quantum electro-dynamics of a silicon-based rectangular microchip. The microchip consists of a very large $N \times M$ grid of electrons. Each electron has either positive (up) or negative (down) spin, denoted by $+$ and $-$ respectively.
+
+Matthew does not know the spin of all the electrons, but he has done $K$ measurements. In the $i$-th measurement, he discovered that the the electron at position $(y_i, x_i)$ has a given spin $s_i$. He also knows that in each $2\times2$ subgrid, there are equally many electrons with positive and negative spin. He wants to know whether he can recover the state of every electron based on his measurements. If not, he would like to know how many possible states are consistent with his measurements. For classified reasons, he wants the answer modulo $10 ^ 9 + 7$.
+
+\section*{Input}
+The first line contain three numbers $N$, $M$ and $K$: the height of the grid, the width of the grid and the number of measurements. The next $K$ lines contain a spin $s_i$ where $s_i$ is either $+$ or $-$, and two numbers $1 \leq y_i \leq N$ and $1 \leq x_i \leq M$ -- the coordinates of the electron. Matthew never did two measurments at the exact same location.
+
+\section*{Constraints}
+We always have $1 \leq N, M \leq 10^9$ and $0 \leq K \leq 100000$. For subcases, the inputs have these further restrictions:
+\begin{itemize}
+\item{\textbf{Group 1: 12 points}} $N, M \leq 5$
+\item{\textbf{Group 2: 42 points}} $N, M \leq 1000$
+\item{\textbf{Group 3: 46 points}} No further restrictions.
+\end{itemize}
+
+\section*{Output}
+Output the total number of valid states consistent with Matthew' measurements modulo $10 ^ 9 + 7$.
+
+\subsection*{Explanation of sample}
+The only two valid grids are\\
++-+- \\
++-+- \\
+and \\
++-+- \\
+-+-+ \\

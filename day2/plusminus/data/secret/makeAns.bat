@@ -1,0 +1,32 @@
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.01.in > g1\plusminus.g1.01.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.02.in > g1\plusminus.g1.02.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.03.in > g1\plusminus.g1.03.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.04.in > g1\plusminus.g1.04.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.05.in > g1\plusminus.g1.05.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.06.in > g1\plusminus.g1.06.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.07.in > g1\plusminus.g1.07.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.08.in > g1\plusminus.g1.08.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.09.in > g1\plusminus.g1.09.ans
+..\..\submissions\accepted\plusminus < g1\plusminus.g1.10.in > g1\plusminus.g1.10.ans
+
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.01.in > g1\plusminus.g2.01.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.02.in > g1\plusminus.g2.02.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.03.in > g1\plusminus.g2.03.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.04.in > g1\plusminus.g2.04.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.05.in > g1\plusminus.g2.05.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.06.in > g1\plusminus.g2.06.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.07.in > g1\plusminus.g2.07.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.08.in > g1\plusminus.g2.08.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.09.in > g1\plusminus.g2.09.ans
+..\..\submissions\accepted\plusminus < g2\plusminus.g2.10.in > g1\plusminus.g2.10.ans
+
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.01.in > g3\plusminus.g3.01.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.02.in > g3\plusminus.g3.02.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.03.in > g3\plusminus.g3.03.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.04.in > g3\plusminus.g3.04.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.05.in > g3\plusminus.g3.05.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.06.in > g3\plusminus.g3.06.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.07.in > g3\plusminus.g3.07.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.08.in > g3\plusminus.g3.08.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.09.in > g3\plusminus.g3.09.ans
+..\..\submissions\accepted\plusminus < g3\plusminus.g3.10.in > g3\plusminus.g3.10.ans
