@@ -1,0 +1,4 @@
+on_reject: break
+grader_flags: no_errors
+range: -1 0 
+accept_score: 0
