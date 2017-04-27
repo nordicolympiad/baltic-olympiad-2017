@@ -43,8 +43,8 @@ public class PartitionedGraphGenerator
   //   generate("test26_false", 1300, 7, 7, 0.95, false);
   //   generate("test27_false", 1300, 9, 4, 0.85, false);
   //   generate("test28_false_stupid_case", 2000, 5, 5, 0.85, true);
-  generate("test31_true", 2500, 9, 6, 0.8, true);
-  generate("test32_false", 2500, 9, 6, 0.8, true);
+  // generate("test31_true", 2500, 9, 6, 0.8, true);
+  generate("test32_false", 2500, 9, 6, 0.8, false);
 	}
 	
 	public static void generate(String file, int n, int p, int q, double prob, boolean type) throws Exception
