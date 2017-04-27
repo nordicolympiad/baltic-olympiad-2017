@@ -6,45 +6,43 @@ import java.util.Random;
 public class PartitionedGraphGenerator 
 {
 	public static int MAX_PQ = 15; 
-	public static int MAX_N = 2500; 
-	public static int MAX_E = 15000; 
-	public static int MAX_SUM_DEG = 30000; 
+	public static int MAX_N = 2000; 
+	public static int MAX_E = 4500; 
+	public static int MAX_SUM_DEG = 9000; 
 	
 	public static void main(String[] args) throws Exception
 	{
-	  // generate("test1_true_smalln", 5, 1, 2, 0.85, true);
-  //   generate("test2_true_smalln", 10, 2, 2, 0.95, true);
-  //   generate("test3_true_smalln", 15, 2, 3, 1.00, true);
-  //   generate("test4_true_smalln", 16, 3, 3, 0.85, true);
-  //   generate("test5_false_smalln", 16, 4, 4, 0.95, false);
-  //   generate("test6_false_smalln", 16, 3, 3, 0.85, false);
-  //   generate("test7_false_stupid_case", 16, 5, 5, 0.85, true);
-  //
-  //   generate("test8_true_smalln_smallq", 100, 5, 0, 0.85, true);
-  //   generate("test9_true_smalln_smallq", 250, 10, 1, 1.00, true);
-  //   generate("test10_true_smalln_smallq", 200, 8, 2, 0.85, true);
-  //   generate("test11_true_smalln_smallq", 150, 5, 2, 0.95, true);
-  //   generate("test12_false_smalln_smallq", 250, 6, 2, 0.85, false);
-  //   generate("test13_false_smalln_smallq", 250, 7, 2, 0.95, false);
-  //   generate("test14_false_stupid_case", 250, 5, 2, 0.85, true);
-  //
-  //   generate("test15_true_smallq", 1000, 10, 0, 0.95, true);
-  //   generate("test16_true_smallq", 1250, 8, 1, 1.00, true);
-  //   generate("test17_true_smallq", 1200, 9, 2, 0.85, true);
-  //   generate("test18_true_smallq", 1250, 9, 2, 0.85, true);
-  //   generate("test19_false_smallq", 1800, 6, 2, 0.95, false);
-  //   generate("test20_false_smallq", 1800, 7, 2, 0.80, false);
-  //   generate("test21_false_stupid_case", 2000, 5, 2, 0.85, true);
-  //
-  //   generate("test22_true", 1900, 6, 5, 0.80, true);
-  //   generate("test23_true", 1800, 5, 5, 1.00, true);
-  //   generate("test24_true", 1650, 6, 5, 0.95, true);
-  //   generate("test25_false", 1050, 10, 5, 0.85, false);
-  //   generate("test26_false", 1300, 7, 7, 0.95, false);
-  //   generate("test27_false", 1300, 9, 4, 0.85, false);
-  //   generate("test28_false_stupid_case", 2000, 5, 5, 0.85, true);
-  generate("test31_true", 2500, 9, 6, 0.8, true);
-  generate("test32_false", 2500, 9, 6, 0.8, true);
+		generate("test1_true_smalln", 5, 1, 2, 0.85, true);
+		generate("test2_true_smalln", 10, 2, 2, 0.95, true);
+		generate("test3_true_smalln", 15, 2, 3, 1.00, true);
+		generate("test4_true_smalln", 16, 3, 3, 0.85, true);
+		generate("test5_false_smalln", 16, 4, 4, 0.95, false);
+		generate("test6_false_smalln", 16, 3, 3, 0.85, false);
+		generate("test7_false_stupid_case", 16, 5, 5, 0.85, true);
+		
+		generate("test8_true_smalln_smallq", 100, 5, 0, 0.85, true);
+		generate("test9_true_smalln_smallq", 250, 10, 1, 1.00, true);
+		generate("test10_true_smalln_smallq", 200, 8, 2, 0.85, true);
+		generate("test11_true_smalln_smallq", 150, 5, 2, 0.95, true);
+		generate("test12_false_smalln_smallq", 250, 6, 2, 0.85, false);
+		generate("test13_false_smalln_smallq", 250, 7, 2, 0.95, false);
+		generate("test14_false_stupid_case", 250, 5, 2, 0.85, true);
+		
+		generate("test15_true_smallq", 1000, 10, 0, 0.95, true);
+		generate("test16_true_smallq", 1250, 8, 1, 1.00, true);
+		generate("test17_true_smallq", 1200, 9, 2, 0.85, true);
+		generate("test18_true_smallq", 1250, 9, 2, 0.85, true);
+		generate("test19_false_smallq", 1800, 6, 2, 0.95, false);
+		generate("test20_false_smallq", 1800, 7, 2, 0.80, false);
+		generate("test21_false_stupid_case", 2000, 5, 2, 0.85, true);
+		
+		generate("test22_true", 1900, 6, 5, 0.80, true);
+		generate("test23_true", 1800, 5, 5, 1.00, true);
+		generate("test24_true", 1650, 6, 5, 0.95, true);
+		generate("test25_false", 1050, 10, 5, 0.85, false);
+		generate("test26_false", 1300, 7, 7, 0.95, false);
+		generate("test27_false", 1300, 9, 4, 0.85, false);
+		generate("test28_false_stupid_case", 2000, 5, 5, 0.85, true);
 	}
 	
 	public static void generate(String file, int n, int p, int q, double prob, boolean type) throws Exception
