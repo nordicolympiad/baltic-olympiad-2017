@@ -1,4 +1,4 @@
-INT(1, 2000, n)
+INT(1, 2500, n)
 SPACE
 INT(1, 15, p)
 SPACE
