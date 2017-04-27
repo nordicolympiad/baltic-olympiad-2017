@@ -2,6 +2,8 @@ author: Daniel Lokshtanov
 source: Baltic Olympiad in Informatics 2017
 source_url: http://boi2017.org
 license: cc by-sa
+limits:
+    time_multiplier: 2
 type: scoring
 
 grading:
