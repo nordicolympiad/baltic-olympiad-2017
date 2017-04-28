@@ -54,6 +54,16 @@ try:
         with open(args.ansfile, "r", encoding='utf-8') as f:
             hasSolution = f.readline().strip() == "home"
 
+        asymmetric = False
+        hased = set()
+        for i in range(n):
+            for j in graph[i]:
+                hased.add((i, j))
+        for i in range(n):
+            for j in graph[i]:
+                if not (j, i) in hased:
+                    asymmetric = True
+
         # Step 1: Accept if correctly judged detetion
         line1 = stdin.readline().strip().lower()
         if not hasSolution:
@@ -114,6 +124,8 @@ try:
 
         # Step 4: Judge error if incorrectly judged a possible partition
         if not hasSolution:
+            if asymmetric:
+                die("should have found asymmetry")
             safe_print("Judge claims no solution exits, but you say there is; however you got so far validated. Weird.")
             exit(1)
 
