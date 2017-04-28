@@ -81,7 +81,7 @@ try:
         # Step 3: Check first line is an integer (since it is not "detention")
         partitions_count = getint(line2)
         if not (1 <= partitions_count <= n):
-            die("# of groups {}, but {} nodes".format(groups, n))
+            die("# of groups {}, but {} nodes".format(partitions_count, n))
 
         seen = [-1] * n
         partitions = []
