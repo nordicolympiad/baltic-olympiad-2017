@@ -2,7 +2,8 @@ source: Baltic Olympiad in Informatics 2017
 source_url: http://boi2017.org
 license: cc by-sa
 limits:
-  time_multiplier: 2
+  time_multiplier: 1.5
+
 type: scoring
 
 grading:
