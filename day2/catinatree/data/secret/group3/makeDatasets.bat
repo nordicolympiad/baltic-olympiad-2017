@@ -18,3 +18,5 @@
 ..\..\..\submissions\accepted\cat < catinatree.g3.18.in > catinatree.g3.18.ans
 ..\..\..\submissions\accepted\cat < catinatree.g3.19.in > catinatree.g3.19.ans
 ..\..\..\submissions\accepted\cat < catinatree.g3.20.in > catinatree.g3.20.ans
+..\..\..\submissions\accepted\cat < catinatree.g3.21.in > catinatree.g3.21.ans
+
