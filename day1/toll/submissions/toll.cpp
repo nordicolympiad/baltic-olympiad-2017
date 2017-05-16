@@ -17,9 +17,6 @@ struct spm {
 		for(int i = 0; i < dim; ++i) M[i][i] = diagVal;
 	}
 	
-	spm(int dim, llint initVal) {M = vector<vector<llint> > (dim, vector<llint> (dim, initVal));}
-	
-	
 	inline int dim() {return M.size();}
 };
 
@@ -59,8 +56,8 @@ struct bst {
 	spm sum(int i, int j) {
 		int L = i + offs - 1;
 		int R = j + offs + 1;
-		spm Lans(K,bigVal,0);
-		spm Rans(K,bigVal,0);
+		spm Lans(K,bigVal,(llint)0);
+		spm Rans(K,bigVal,(llint)0);
 		while(true) {
 			bool Lright = L%2 == 0;
 			bool Rleft = R%2 == 1;
@@ -80,9 +77,7 @@ int main() {
 		
 	// read input
 	scanf("%d%d%d%d",&K,&N,&M,&O);
-	vector<spm> initArray(N/K, spm(K, bigVal, bigVal));	
-		
-	//vector<spm> initArray(N/K+1, spm(K, bigVal));
+	vector<spm> initArray(N/K, spm(K, bigVal, bigVal));
 	for(int i = 0; i < M; ++i) {
 		int a,b,t;
 		scanf("%d%d%d",&a,&b,&t);
@@ -96,8 +91,12 @@ int main() {
 	for(int i = 0; i < O; ++i) {
 		int a,b;
 		scanf("%d%d",&a,&b);
-		spm ans = T.sum(a/K, b/K-1);
-		printf("%lld\n", (ans.M[a%K][b%K] < bigVal ? ans.M[a%K][b%K] : -1));
+		if(a/K >= b/K) {
+			printf("-1\n");
+		} else {
+			spm ans = T.sum(a/K, b/K-1);
+			printf("%lld\n", (ans.M[a%K][b%K] < bigVal ? ans.M[a%K][b%K] : -1));
+		}
 	}
 	
 	return 0;

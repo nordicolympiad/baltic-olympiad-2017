@@ -64,7 +64,7 @@ int main() {
 	assert(m >= 1, "Too few ministers");
 	assert(m <= maxM, "Too many ministers");
 
-	int s;
+	int s = 0;
 	for(int i = 0; i < m; ++i) {
 		int si;
 		cin >> si;
@@ -76,11 +76,11 @@ int main() {
 		assert(si >= 2, "si < 2");
 		s += si;
 	}
-	assert(s >= 2*m, "To small S");
-	assert(s <= maxS, "To big S");
+	assert(s >= 2*m, "Too small S");
+	assert(s <= maxS, "Too big S");
 	
 	assert(k >= 1, "too small k");
-	assert(k <= m, "too big S");
+	assert(k <= m, "too big k");
 	
 	return totalSuccess ? 42 : 1;
 }
