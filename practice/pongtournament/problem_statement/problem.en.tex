@@ -8,16 +8,16 @@ Together with the other disqualified players, you plead with the king to make hi
 
 \section*{Input}
 The first line contains two positive integers, $n$ the number of high school students, and $k$ the number of disqualified players. Then follows $n$ lines, each containing $n$ integers. The $j$-th integer on the $i$-th line is $1$ if player $i$ beat player $j$, and $0$ otherwise (i.e. there is also a $0$ at the $i$-th entry of the $i$-th line, even though player $i$ didn't lose to himself). Finally, there is a line with $k$ integers indicating the set $S$, the players who were disqualified. Each player is identified by a number between $0$ and $n-1$. You may assume that, when the disqualified players $S$ are removed, there exists a fair ranking of the remaining players. A \emph{fair} ranking is one such that nobody is ranked below someone they beat. We remark that even though the Swedish experts couldn't find a fair ordering of all the players, there might still be one. \textbf{Note:} The input may be quite large.
-
-\section*{Constraints}
-We always have $2 \leq k \leq n \leq 2\,000$. For subcases, the inputs have these further restrictions:
-
-\begin{description}
-    \item{\textbf{Group 1: 20 points}} $n \leq 30$ % n-k choose k * n**2
-    \item{\textbf{Group 2: 30 points}} $k \leq 8$, $n \leq 100$ %3**k * n**2
-    \item{\textbf{Group 3: 50 points}} No further restrictions.
-\end{description}
-
+%
+%\section*{Constraints}
+We always have $2 \leq k \leq n \leq 2\,000$. 
+%For subcases, the inputs have these further restrictions:
+%
+%\begin{description}
+%    \item{\textbf{Group 1: 20 points}} $n \leq 30$ % n-k choose k * n**2
+%    \item{\textbf{Group 2: 30 points}} $k \leq 8$, $n \leq 100$ %3**k * n**2
+%    \item{\textbf{Group 3: 50 points}} No further restrictions.
+%\end{description}
 
 \section*{Output}
 Output a single integer, the size $k'$ of the smallest set $S'$ of players needed to be disqualified to make a fair ranking. Recall that none of the originally disqualified players of $S$ can be in $S'$, and $k'$ must be strictly less than $k$. If no such solution exists, print ``impossible''.

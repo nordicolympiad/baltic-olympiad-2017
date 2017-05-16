@@ -1,3 +1,0 @@
-on_reject: continue 
-grader_flags: always_accept sum
-range: 0 100

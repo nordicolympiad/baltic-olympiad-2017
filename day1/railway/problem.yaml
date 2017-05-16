@@ -1,10 +1,7 @@
-name: Railway
-source: Baltic Olympiad in Informatics 2017
+name: railway
+author: Thomasz Idziaszek
+source: Baltic Olympiad in Informatics 2017, Day 1
 source_url: http://boi2017.org
 license: cc by-sa
 limits:
-  time_multiplier: 2
-type: scoring
-
-grading:
-  objective: max
+  time_multiplier: 1.7

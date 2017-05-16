@@ -1,10 +1,6 @@
-source: Baltic Olympiad in Informatics 2017
+name: catinatree
+source: Baltic Olympiad in Informatics 2017, Day 2
 source_url: http://boi2017.org
 license: cc by-sa
 limits:
-  time_multiplier: 1.5
-
-type: scoring
-
-grading:
-  objective: max
+  time_multiplier: 2

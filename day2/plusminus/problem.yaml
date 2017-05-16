@@ -1,7 +1,6 @@
-source: Baltic Olympiad in Informatics 2017
+name: plusminus
+source: Baltic Olympiad in Informatics 2017, Day 2
 source_url: http://boi2017.org
 license: cc by-sa
-type: scoring
-
-grading:
-    objective: max
+limits:
+  time_multiplier: 2

@@ -1,10 +1,7 @@
+name: pongtournament
 author: Daniel Lokshtanov, Torstein Strømme
-source: Baltic Olympiad in Informatics 2017
+source: Baltic Olympiad in Informatics 2017, Warmup
 source_url: http://boi2017.org
 license: cc by-sa
 limits:
   time_multiplier: 2
-type: scoring
-
-grading:
-  objective: max
