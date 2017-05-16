@@ -1,0 +1,19 @@
+INT(1, 50*1000, n)
+SPACE
+INT(1, 10, k)
+NEWLINE
+
+REP(n)
+  INT(0, n-1, d)
+  REPI(i, d)
+    SPACE
+    INT(0, n-1, a[i])
+  END
+  IF(d > 0)
+    ASSERT(UNIQUE(a))
+    UNSET(a)
+  END
+  NEWLINE
+END
+
+EOF
