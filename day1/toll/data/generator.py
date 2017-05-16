@@ -14,11 +14,12 @@ parser.add_argument('-o', metavar='O', type=int, default=10,
 parser.add_argument('-seed', metavar='S', type=int, default=None,
                     help='seed for generation (optional)')
 parser.add_argument('-forceA', action="store_true", help='Force start at a')
+parser.add_argument('-spread', action="store_true", help='All queries far apart')
 args = parser.parse_args()
 random.seed(args.seed)
 
 # Options
-n, k, o, force_a = args.n, args.k, args.o, args.forceA
+n, k, o, force_a, spread = args.n, args.k, args.o, args.forceA, args.spread
 prob = max(0, min(1, args.m))
 
 # Helper functions
@@ -55,6 +56,11 @@ def generateRandom(n, k, o, force_a, prob):
         if force_a:
             b = random.randint(1, n-1)
             print(0, b)
+        elif spread:
+            a, b = random.randint(0, n//10), random.randint((9*n)//10, n-1)
+            while (a >= b):
+                a, b = random.randint(0, n//10), random.randint((9*n)//10, n-1)
+            print(a, b)
         else:
             a, b = random.randint(0, n-1), random.randint(0, n-1)
             while (a >= b):

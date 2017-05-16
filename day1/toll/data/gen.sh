@@ -103,12 +103,12 @@ O="3000"
 ./generator.py -n 10 -k 3 -m 0.8 -o 10 -seed 33  > $DR/$PROBLEMNAME.$G.03.in
 ./generator.py -n 10 -k 4 -m 0.8 -o 10 -seed 43  > $DR/$PROBLEMNAME.$G.04.in
 ./generator.py -n 10 -k 5 -m 0.8 -o 10 -seed 53  > $DR/$PROBLEMNAME.$G.05.in
-./generator.py -n 1000 -k 1 -m 0.99 -o $O -seed 83  > $DR/$PROBLEMNAME.$G.06.in
+./generator.py -n 1000 -k 1 -m 0.99 -o $O -spread -seed 83  > $DR/$PROBLEMNAME.$G.06.in
 ./generator.py -n 1000 -k 2 -m 0.95 -o $O -seed 93  > $DR/$PROBLEMNAME.$G.07.in
-./generator.py -n 1000 -k 5 -m 0.8 -o $O -seed 93  > $DR/$PROBLEMNAME.$G.08.in
+./generator.py -n 1000 -k 5 -m 0.8 -o $O -spread -seed 93  > $DR/$PROBLEMNAME.$G.08.in
 ./generator.py -n 1000 -k 4 -m 0.8 -o $O -seed 93  > $DR/$PROBLEMNAME.$G.09.in
 
-./generator.py -n $NE  -k 1 -m 0.999 -o $O -seed 103  > $DR/$PROBLEMNAME.$G.10.in
+./generator.py -n $NE  -k 1 -m 0.999 -o $O -spread -seed 103  > $DR/$PROBLEMNAME.$G.10.in
 ./generator.py -n $NE  -k 2 -m 0.95 -o $O -seed 113  > $DR/$PROBLEMNAME.$G.11.in
 ./generator.py -n $NE  -k 3 -m 0.9 -o $O -seed 123  > $DR/$PROBLEMNAME.$G.12.in
 
@@ -125,7 +125,12 @@ O="10000"
 ./generator.py -n $NE -k 1 -m 0.999 -o $O -seed 104  > $DR/$PROBLEMNAME.$G.01.in
 ./generator.py -n $NE -k 2 -m 0.999 -o $O -seed 114  > $DR/$PROBLEMNAME.$G.02.in
 ./generator.py -n $NO -k 3 -m 0.99 -o $O -seed 134  > $DR/$PROBLEMNAME.$G.03.in
-./generator.py -n $NO -k 4 -m 0.99 -o $O -seed 134  > $DR/$PROBLEMNAME.$G.03.in
+./generator.py -n $NO -k 4 -m 0.99 -o $O -seed 134  > $DR/$PROBLEMNAME.$G.04.in
+
+./generator.py -n $NE -k 1 -m 0.999 -o $O -spread -seed 104  > $DR/$PROBLEMNAME.$G.05.in
+./generator.py -n $NE -k 2 -m 0.999 -o $O -spread -seed 114  > $DR/$PROBLEMNAME.$G.06.in
+./generator.py -n $NO -k 3 -m 0.99 -o $O -spread -seed 134  > $DR/$PROBLEMNAME.$G.07.in
+./generator.py -n $NO -k 4 -m 0.99 -o $O -spread -seed 134  > $DR/$PROBLEMNAME.$G.08.in
 
 
 
