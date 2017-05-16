@@ -1,0 +1,24 @@
+INT(1, 2500, n)
+SPACE
+INT(1, 15, p)
+SPACE
+INT(0, 15-p, q)
+NEWLINE
+
+SET(summ = 0)
+REPI(i, n)
+  INT(0, n-1, f)
+  SET(summ = summ + f)
+  REPI(j, f)
+    SPACE
+    INT(0,n-1,a[j])
+  END
+  IF(f > 0)
+    ASSERT(UNIQUE(a))
+    UNSET(a)
+  END
+  NEWLINE
+END
+
+ASSERT(summ <= 30000)
+EOF
